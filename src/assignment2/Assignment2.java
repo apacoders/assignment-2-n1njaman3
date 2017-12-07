@@ -1,5 +1,8 @@
 package assignment2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Instructions for this assignment.  Download this template from GitHub, fill in
  * the author comment below with your name and implement the requirements below.
@@ -33,6 +36,22 @@ package assignment2;
 public class Assignment2 {
 
     public static void main(String[] args) {
+        
+        Canine Jim = new Canine("Woof");
+        Feline Tim = new Feline("Meow");
+        Mouse Joe = new Mouse("Squeek");
+        Human Moe = new Human("Narly");
+        
+        List<Animal> myAnimal = new ArrayList();
+            myAnimal.add(Moe);
+            myAnimal.add(Joe);
+            myAnimal.add(Tim);
+            myAnimal.add(Jim);
+        
+        for(int i=0; i<myAnimal.size();i++){
+            System.out.println(myAnimal.get(i).speak());
+        }
+        
         
         
     }
